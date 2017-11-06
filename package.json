@@ -1,6 +1,6 @@
 {
   "name": "lib-weixin-analysis",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A library used to request Weixin analysis API",
   "main": "index.js",
   "directories": {
