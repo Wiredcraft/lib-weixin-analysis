@@ -68,7 +68,7 @@ describe('Mini Program Pages', () => {
     mockRes('/getweanalysisappidvisitpage', fakeResponse);
 
     return mProAnalysis.getVisitPage('testStartDate', 'testEndDate')
-      .then(({ data }) => {
+      .then((data) => {
         data.should.be.eql(fakeResponse);
       });
   });

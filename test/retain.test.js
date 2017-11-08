@@ -28,7 +28,7 @@ describe('Mini Program Retain', () => {
     mockRes('/getweanalysisappiddailyretaininfo', fakeResponse);
 
     return mProAnalysis.getDdailyRetaininfo('testStartDate', 'testEndDate')
-      .then(({ data }) => {
+      .then((data) => {
         data.should.be.eql(fakeResponse);
       });
   });
@@ -61,7 +61,7 @@ describe('Mini Program Retain', () => {
     mockRes('/getweanalysisappidweeklyretaininfo', fakeResponse);
 
     return mProAnalysis.getWeeklyRetaininfo('testStartDate', 'testEndDate')
-      .then(({ data }) => {
+      .then((data) => {
         data.should.be.eql(fakeResponse);
       });
   });
@@ -86,7 +86,7 @@ describe('Mini Program Retain', () => {
     mockRes('/getweanalysisappidmonthlyretaininfo', fakeResponse);
 
     return mProAnalysis.getMonthlyRetaininfo('testStartDate', 'testEndDate')
-      .then(({ data }) => {
+      .then((data) => {
         data.should.be.eql(fakeResponse);
       });
   });

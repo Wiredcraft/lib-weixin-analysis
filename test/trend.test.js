@@ -23,7 +23,7 @@ describe('Mini Program Trend', () => {
     mockRes('/getweanalysisappiddailysummarytrend', fakeResponse);
 
     return mProAnalysis.getDailySummaryTrend('testStartDate', 'testEndDate')
-      .then(({ data }) => {
+      .then((data) => {
         data.should.be.eql(fakeResponse);
       });
   });
@@ -46,7 +46,7 @@ describe('Mini Program Trend', () => {
     mockRes('/getweanalysisappiddailyvisittrend', fakeResponse);
 
     return mProAnalysis.getDailyVisitTrend('testStartDate', 'testEndDate')
-      .then(({ data }) => {
+      .then((data) => {
         data.should.be.eql(fakeResponse);
       });
   });
@@ -69,7 +69,7 @@ describe('Mini Program Trend', () => {
     mockRes('/getweanalysisappidweeklyvisittrend', fakeResponse);
 
     return mProAnalysis.getWeeklyVisitTrend('testStartDate', 'testEndDate')
-      .then(({ data }) => {
+      .then((data) => {
         data.should.be.eql(fakeResponse);
       });
   });
@@ -92,7 +92,7 @@ describe('Mini Program Trend', () => {
     mockRes('/getweanalysisappidmonthlyvisittrend', fakeResponse);
 
     return mProAnalysis.getMonthlyVisitTrend('testStartDate', 'testEndDate')
-      .then(({ data }) => {
+      .then((data) => {
         data.should.be.eql(fakeResponse);
       });
   });

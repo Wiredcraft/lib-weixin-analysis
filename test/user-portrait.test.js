@@ -102,7 +102,7 @@ describe('Mini Program User Portrait', () => {
     mockRes('/getweanalysisappiduserportrait', fakeResponse);
 
     return mProAnalysis.getUserPortrait('testStartDate', 'testEndDate')
-      .then(({ data }) => {
+      .then((data) => {
         data.should.be.eql(fakeResponse);
       });
   });
