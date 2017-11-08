@@ -121,7 +121,7 @@ describe('Mini Program Distribution', () => {
     mockRes('/getweanalysisappidvisitdistribution', fakeResponse);
 
     return mProAnalysis.getVisitDistribution('testStartDate', 'testEndDate')
-      .then(({ data }) => {
+      .then(data => {
         data.should.be.eql(fakeResponse);
       });
   });
